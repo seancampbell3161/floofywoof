@@ -1,0 +1,17 @@
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/bin/Debug/net7.0/Infrastructure.deps.json
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/bin/Debug/net7.0/Infrastructure.runtimeconfig.json
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/bin/Debug/net7.0/Infrastructure.dll
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/bin/Debug/net7.0/Infrastructure.pdb
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/bin/Debug/net7.0/Core.dll
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/bin/Debug/net7.0/Core.pdb
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.AssemblyInfo.cs
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.CopyComplete
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.dll
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/Infrastructure.genruntimeconfig.cache
+/Users/seancampbell/Documents/source/repos/FloofyWoof/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll
