@@ -30,9 +30,9 @@ public class PetRepository : IPetRepository
         return pets;
     }
 
-    public async Task<int> AddPetAsync(string name)
+    public async Task<int> AddPetAsync(string name, int petType)
     {
-        await _db.Pets.AddAsync(new Pet() { Id = 0, Name = name });
+        await _db.Pets.AddAsync(new Pet() { Id = 0, Name = name, PetType = petType});
 
         return (await _db.SaveChangesAsync());
     }
@@ -43,7 +43,7 @@ public class PetRepository : IPetRepository
 
         if (entity == null) return new Pet();
 
-        entity.Name = pet.Name;
+        entity = pet;
 
         await _db.SaveChangesAsync();
 

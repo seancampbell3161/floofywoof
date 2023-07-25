@@ -15,7 +15,8 @@ public static class ApplicationServicesExtensions
         });
         
         //services
-        
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        services.AddScoped<IPetRepository, PetRepository>();
 
         services.AddCors(opt =>
         {
@@ -25,8 +26,6 @@ public static class ApplicationServicesExtensions
             });
         });
 
-        services.AddScoped<IPetRepository, PetRepository>();
-        
         return services;
     }
 }
