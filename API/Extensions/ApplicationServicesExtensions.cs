@@ -1,4 +1,6 @@
+using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace FloofyWoof.Extensions;
@@ -22,6 +24,8 @@ public static class ApplicationServicesExtensions
                 policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
             });
         });
+
+        services.AddScoped<IPetRepository, PetRepository>();
         
         return services;
     }

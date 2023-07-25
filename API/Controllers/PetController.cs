@@ -1,3 +1,5 @@
+using Core.Entities;
+using Core.Interfaces;
 using FloofyWoof.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
@@ -5,32 +7,17 @@ namespace FloofyWoof.Controllers;
 
 public class PetController : BaseApiController
 {
+    private readonly IPetRepository _petRepository;
+
+    public PetController(IPetRepository petRepository)
+    {
+        _petRepository = petRepository;
+    }
+
     [HttpGet]
     public async Task<IActionResult> GetPets()
     {
-        var pets = new List<PetDto>();
-
-        var pet1 = new PetDto()
-        {
-            Id = 1,
-            Name = "Spring"
-        };
-
-        var pet2 = new PetDto()
-        {
-            Id = 2,
-            Name = "Tucky"
-        };
-
-        var pet3 = new PetDto()
-        {
-            Id = 3,
-            Name = "Bisky"
-        };
-        
-        pets.Add(pet1);
-        pets.Add(pet2);
-        pets.Add(pet3);
+        var pets = await _petRepository.GetPetsAsync();
 
         return Ok(pets);
     }
@@ -38,12 +25,24 @@ public class PetController : BaseApiController
     [HttpGet("{id}")]
     public async Task<IActionResult> GetPetById(int id)
     {
-        var pet = new PetDto()
-        {
-            Id = id,
-            Name = "Spring"
-        };
+        var pet = await _petRepository.GetPetByIdAsync(id);
 
         return Ok(pet);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddPet(string name)
+    {
+        var addPet = await _petRepository.AddPetAsync(name);
+
+        return Ok(addPet);
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> UpdatePet(Pet pet)
+    {
+        var updatePet = await _petRepository.UpdatePetAsync(pet);
+
+        return Ok(updatePet);
     }
 }
